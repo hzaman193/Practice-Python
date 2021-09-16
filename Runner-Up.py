@@ -9,7 +9,11 @@ for i in range(n):
             score_list[j + 1] = temp
 
 res = []
-[res.append(x) for x in score_list if x not in res]
+for x in score_list:
+    if x not in res:
+        res.append(x)
+
+#res = [res.append(x) for x in score_list if x not in res]
 print(res)
 print(res[len(res) - 2])
 
