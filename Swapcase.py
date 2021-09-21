@@ -10,6 +10,7 @@ def swap_case(s):
             new_string = new_string + i.upper()
     return new_string
 
+
 swap_string = input()
 result = swap_case(swap_string)
 print(result)
